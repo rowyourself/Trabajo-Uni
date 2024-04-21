@@ -1,8 +1,12 @@
 .card:hover {
-
+    cursor: pointer;
     transform: scale(1.05);
 }
 
 .card {
     transition: all 0.3s;
+}
+
+.piePage {
+    color: white;
 }
