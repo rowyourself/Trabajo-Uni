@@ -5,6 +5,9 @@
 
 .card {
     transition: all 0.3s;
+    z-index: 0;
+    
+    
 }
 
 .piePage {
@@ -13,4 +16,21 @@
 
 .body   {
     background-color: beige;
+}
+
+#carousel {
+    z-index: -1;
+    position:a sticky;
+}
+
+#navbarDropdown{
+    z-index: 100;
+    position: relative;
+}
+
+#menudrop:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+    z-index: 100;
+    
 }
