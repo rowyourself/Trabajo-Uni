@@ -1,3 +1,18 @@
+function formatRut(input) {
+    // Eliminar caracteres no numéricos
+    var rut = input.value.replace(/[^\dkK\d]/g, '');
+  
+    // Separar dígito verificador
+    var dv = rut.slice(-1);
+  
+    // Formatear los números
+    rut = rut.slice(0, -1).replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1.');
+  
+    // Mostrar el RUT formateado
+    input.value = rut + '-' + dv;
+  }
+
+
 
 function checkRut(rut) {
     // Despejar Puntos
